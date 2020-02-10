@@ -6,7 +6,7 @@
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | Henry Schreiner | _(princeton.edu)_ | United States | Princeton University | iscinumpy.gitlab.io | **yes** |
 | Jim Pivarski | _(princeton.edu)_ | United States | Princeton University | iscinumpy.gitlab.io | no |
-| Hans Dembinski | _(cern.ch)_ | Germany |  | _(none)_ | no |
+| Hans Dembinski | _(cern.ch)_ | Germany | TU Dortmund | _(none)_ | no |
 
 ## Title
 
