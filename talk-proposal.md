@@ -21,10 +21,10 @@ can be filled, manipulated, sliced, and projected as objects.  Building on top
 of the Boost libraries' Histogram in C++14 provided interesting and
 distribution and design challenges with useful solutions. This is meant to be a
 foundation that others can build on; in the [Scikit-HEP project][], a physicist
-friendly front-end "Hist" and a conversion package "Aghast" are being designed
-around boost-histogram.
+friendly front-end "Hist" and a conversion package "Aghast" are already being
+designed around boost-histogram.
 
-> 95 words.
+> 96 words.
 
 ## The Abstract
 
@@ -35,12 +35,14 @@ true histogram object. In the High Energy Physics (HEP) community,
 histogramming is vital to most of our analysis. As part of building tools in
 Python to provide a friendly and powerful alternative to the ROOT C++ analysis
 stack[^1], histogramming was targeted as an area that needed significant
-improvement.
+improvement. The histograms as objects is a general, powerful tool that can be
+utilized in many other disciplines, as well.
 
-About a year ago, a new C++14 library was released as part of Boost; it was a
-well designed stand-alone histogram package that did exactly what we wanted,
-but in C++14. We built boost-histogram for Python in close collaboration
-with the original Histogram for Boost author.
+About a year ago, a new C++14 library was released as part of the Boost C++
+libraries version 1.70; it was a well designed stand-alone histogram package
+that did exactly what we wanted, but in C++14 rather than Python. We built
+boost-histogram for Python in close collaboration with the original Histogram
+for Boost author.
 
 A **histogram** can be viewed as a collection of 1 or more **axes** and a bin
 **storage**.  The storage has an **accumulator**, which could be an integer, a
@@ -48,11 +50,11 @@ float, or something more complicated, like a mean (AKA profile). An axis can be
 regularly spaced, variably spaced, or a category, either with integer or string
 labels. Regular spacing has a complexity benefit, which can be exploited with
 **transforms**, such as log spacing, power spacing, or with a custom C
-callback, such as produced by numba's `cfunc` decorator. Histograms have the
+callback, such as produced by Numba's `cfunc` decorator. Histograms have the
 same API, whether they have one axis or 32.
 
 The powerful indexing proposal, called Unified Histogram Indexing (UHI), allows
-numpy-like slicing and cross-library tag usage.  This can be used to select
+Numpy-like slicing and cross-library tag usage.  This can be used to select
 items from axes, sum over axes, and slice as well, in either data or bin
 coordinates.  One of the benefits of the axes based design is that selections
 that traditionally would have required multiple histograms now can simply be
@@ -68,7 +70,7 @@ Building a Python library on a C++14 library provided several challenges.
 Distributing wheels was automated through Azure DevOps and supports all major
 platforms; some tricks were employed to make the latest compilers available.
 The Azure build-system is now used in at least three other Scikit-HEP projects.
-Conda-forge is also supported.  Binding was done with PyBind11, all Boost
+Conda-Forge is also supported.  Binding was done with PyBind11, all Boost
 dependencies are included, so a compatible compiler is the only requirement for
 building if a binary is not available.
 
@@ -79,7 +81,7 @@ simple and natural, while being highly performant. In the future, we are
 building on this foundation and expect other libraries may want to build on
 this as well.
 
-> 481 words.
+> 508 words.
 
 ## About the speaker
 
@@ -92,7 +94,8 @@ along with a topical ["what's new in Python 3.8"][pyhep-38] talk. For further
 information on [boost-histogram][], see the [docs][boost-histogram-docs] or [my
 post][iscinumpy-bh].
 
-> Update boost-histogram paper link when placed on arXiv
+> I've been waiting for the proceedings to the boost-histogram CHEP talk to be
+> released on arXiv, but it's on hold ATM.
 
 [^1]: Yes, in HEP we are used to C++ and interactive analysis in the same sentence.
 
