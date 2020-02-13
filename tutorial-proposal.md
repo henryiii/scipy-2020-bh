@@ -3,7 +3,6 @@
 Contributors:
 
 * Henry Schreiner
-* Hans Dembenski
 * Jim Pivarski
 
 ## Short description
@@ -44,13 +43,13 @@ reproducible environment using conda.
 ### 1. 1D histograms (50 minutes)
 
 This will introduce the concept of a histogram. It will start by computing a
-standard histogram with numpy, then move to the drop-in replacement in
+standard histogram with Numpy, then move to the drop-in replacement in
 boost-histogram, noting the speed difference. Then, we will move to returning
-an object, but then converting it to a numpy style output, and will slowly
+an object, but then converting it to a Numpy style output, and will slowly
 iterate until we arrive at the full histogram object start to finish. The
 lesson will fill in the basic concepts of a histogram, such as axis properties
 and slicing, and then participants will get to try converting a piece of code
-from numpy to histogram objects.
+from Numpy to histogram objects.
 
 ### 2. ND histograms (40 minutes)
 
@@ -64,7 +63,7 @@ indexing.
 This will cover the non-default storages. After a quick mention of selecting
 other simple storages (double, int, atomic int, unlimited), we will focus on
 the four accumulator based storages (weighted, weighted sum, mean, weighted
-mean) and how to manipulate the numpy record views returned from these storages
+mean) and how to manipulate the Numpy record views returned from these storages
 efficiently. This will use accumulators directly as well, to illustrate how
 they work without the extra complications of manipulating views.
 
@@ -101,6 +100,7 @@ code.
 
 # Setup instructions
 
+An initial version is available at <https://github.com/henryiii/histogram-tutorial>.
 
 ## Install
 
@@ -117,26 +117,38 @@ Download the github repository (note: During the workshop, you can skip the bran
 It is there if you clone after the workshop and want identical contents).
 
 ```bash
-git clone https://github.com/henryiii/histogram-tutorial --branch scipy2020
+git clone https://github.com/henryiii/histogram-tutorial
 ```
 
-Change directory and create the `scipy-2020-hist` environment from `environment.yaml`:
+> NOTE: `--branch scipy2020` will be added shortly before tutorial; use master for now.
+
+Change directory and create the `histogram-tutorial` environment from `environment.yaml`:
 
 ```bash
 cd histogram-tutorial
 conda env create
 ```
 
-Activate your environment (if you already use conda, the environment does
-install a ipython kernel, so you can just use your existing favorite Juptyer
-lab environment to run and then select the `scipy-2020-hist` kernel).
+Activate your environment (if you already use Conda, the environment does
+install a IPython kernel, so you can just use your existing favorite Juptyer
+lab environment to run and then select the `histogram-tutorial` (will become `scipy-2020-hist`) kernel).
 
 ```bash
-conda activate scipy-2020-hist
+conda activate histogram-tutorial
 ```
 
-Start up a juptyer lab instance:
+Start up a JuptyerLab instance:
 
 ```bash
 jupyter lab
 ```
+
+## About the authors
+
+Henry Schreiner works in [Princeton Research Computing](https://researchcomputing.princeton.edu).
+
+* Website: <https://iscinumpy.gitlab.io>
+* Talks list: <https://iscinumpy.gitlab.io/page/presentations/>
+* Tutorial over histogramming at PyHEP 2019: <https://indico.cern.ch/event/833895/contributions/3577835/>
+
+Jim Pivarski is part of the Princeton Physics department.
