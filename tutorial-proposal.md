@@ -1,17 +1,21 @@
-# SciPy 2020 Tutorial submission: Effective histograms with boost-histogram
+# SciPy 2020 Tutorial submission
+## Boost-histogram: Histograms for all
 
 Contributors:
 
 * Henry Schreiner
 * Jim Pivarski
+* Hans Dembinski
 
-## Short description
+## Abstract / Tutorial Description
 
 This tutorial is an introduction to boost-histogram, a library providing a
-powerful histogram-as-an-object concept. It is aimed at scientists and data
-analyst who use histograms in their analysis. Some familiarity with numpy and
-at least passing knowledge of numpy's histogram functions is expected. Some
-familiarity with matplotlib is also useful, but not required.
+powerful histogram-as-an-object concept. It is aimed at anyone who uses
+histograms in their analysis or research, with an advanced section at the end
+for library authors and advanced users.  Some familiarity with numpy and at
+least passing knowledge of numpy's histogram functions is expected. Some
+familiarity with matplotlib is also useful, but not required. Advanced sections
+will cover numba and xarray, but should be completable without prior knowledge.
 
 We will work though a series of notebooks and will build up the idea of a
 histogram as an object instead of a collection of arrays. We will then solve
@@ -25,7 +29,25 @@ several realistic problems. Topics covered:
 6. Analysis example: something from astro
 7. Advanced: xarray histograms
 
-## Long description
+## Keywords
+* Histogram
+* Data science
+* Aggregation
+
+
+
+## List of Tutorial Prerequisites
+
+* Numpy familiarity, including rough knoledge histograms in numpy
+* Matplotlib
+* (Optional) numba
+* (Very optional) xarray
+
+## Level:
+
+* Intermediate
+
+## Tutorial Outline
 
 This tutorial is an introduction to histograms as objects in boost-histogram.
 
@@ -75,7 +97,7 @@ will be explored, using Numba to produce a c callback with `@cfunc` that can be
 used to provide regular spaced binning transforms with virtually no performance
 loss over purely compiled code.
 
-### 5. Analysis example: selections as categories (25 minutes)
+### 5. Complete example: selections as categories in an analysis (25 minutes)
 
 This will cover a realistic example of an analysis, where a collection of
 different selections are required. Selections (such as data quality criteria)
@@ -85,7 +107,9 @@ be combined into a single object, and also makes it easier to add new control
 checks, so that selections can be made when histogramming that can later be
 removed.
 
-### 6. Analysis example: something from astro (25 minutes)
+### 6. Complete example: other (25 minutes)
+
+This will cover a different use case for histograms.
 
 ### 7. Advanced: xarray histograms (30 minutes)
 
@@ -100,7 +124,6 @@ code.
 
 # Setup instructions
 
-An initial version is available at <https://github.com/henryiii/histogram-tutorial>.
 
 ## Install
 
@@ -143,7 +166,11 @@ Start up a JuptyerLab instance:
 jupyter lab
 ```
 
-## About the authors
+## Additional Tutorial Information
+
+* An initial version is available at <https://github.com/henryiii/histogram-tutorial>
+
+## Instructor Bio
 
 Henry Schreiner works in [Princeton Research Computing](https://researchcomputing.princeton.edu).
 
