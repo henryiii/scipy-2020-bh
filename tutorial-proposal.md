@@ -178,4 +178,7 @@ Henry Schreiner works in [Princeton Research Computing](https://researchcomputin
 * Talks list: <https://iscinumpy.gitlab.io/page/presentations/>
 * Tutorial over histogramming at PyHEP 2019: <https://indico.cern.ch/event/833895/contributions/3577835/>
 
-Jim Pivarski is part of the Princeton Physics department.
+Jim Pivarski is a [DIANA-HEP](https://diana-hep.org/) and [IRIS-HEP](https://iris-hep.org/) computational physicist in the Princeton Physics Department.
+
+* Most recent tutorial: [Fast, Columnar Data Analysis with Data Science Tools](https://indico.cern.ch/event/782953/sessions/302485/#20190729) at the [Division of Particles and Fields (DPF) of the American Physical Society (APS)](https://indico.cern.ch/event/782953/overview).
+* Video of most recent presentation: [Jagged, Ragged, Awkward Arrays](https://youtu.be/2NxWpU7NArk).
