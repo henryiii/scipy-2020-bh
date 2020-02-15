@@ -121,11 +121,11 @@ objects. Using boost-histogram's powerful axis metadata and other features, we
 will replicate a significant portion of xhistogram with just a few lines of
 code.
 
+# Hands on portion
 
-# Setup instructions
+The beginning of each section will consist of a live Jupyter notebook presentation that participants can optionally follow along in. The second part of each (lesson) section will have a small project that participants will attempt to complete, followed by a quick discussion of possible solution(s) with the participants.
 
-
-## Install
+## Installation instructions for participants
 
 Install miniconda on your platform. Either follow the instructions here:
 <https://conda.io/docs/install/quick.html>, or if one of the following applies
