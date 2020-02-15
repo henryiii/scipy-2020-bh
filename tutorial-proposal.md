@@ -153,7 +153,7 @@ conda env create
 ```
 
 Activate your environment (if you already use Conda, the environment does
-install a IPython kernel, so you can just use your existing favorite Juptyer
+install a IPython kernel, so you can just use your existing favorite Jupyter
 lab environment to run and then select the `histogram-tutorial` (will become `scipy-2020-hist`) kernel).
 
 ```bash
@@ -177,6 +177,8 @@ Henry Schreiner works in [Princeton Research Computing](https://researchcomputin
 * Website: <https://iscinumpy.gitlab.io>
 * Talks list: <https://iscinumpy.gitlab.io/page/presentations/>
 * Tutorial over histogramming at PyHEP 2019: <https://indico.cern.ch/event/833895/contributions/3577835/>
+* CMake tutorial at USATLAS bootcamp with SWC <https://henryiii.github.io/cmake_workshop/> 
+* University of Cincinnati PHYS 5041/6041: Computational Physics: <https://github.com/henryiii/compclass/blob/master/syllabus/computational.md> (with lecture recordings)
 
 Jim Pivarski is a [DIANA-HEP](https://diana-hep.org/) and [IRIS-HEP](https://iris-hep.org/) computational physicist in the Princeton Physics Department.
 
